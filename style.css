@@ -112,8 +112,8 @@ nav ul li a:hover {
   }
 }
 
-.img {
-  background-image: url("/2.jpg");
+.image {
+  background-image: url("2.jpg");
   height: auto;
   background-position: center;
   background-repeat: no-repeat;
