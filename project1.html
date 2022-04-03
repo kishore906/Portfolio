@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="project.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">KISHORE KOPPULA</label>
+      <ul class="nav_links">
+        <li><a href="index.html" class="nav_link">About</a></li>
+        <li><a href="index.html" class="nav_link">Education</a></li>
+        <li><a href="index.html" class="nav_link">Experience</a></li>
+        <li><a href="index.html" class="nav_link">Skills</a></li>
+        <li><a href="index.html" class="nav_link">Projects</a></li>
+        <li><a href="index.html" class="nav_link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="project_back">
+      <h3>About the Project</h3>
+      <p><b>Project Name:</b> Ecommerce Website For True Stones</p>
+      <p><b>Skills Used:</b> HTML, CSS, PHP, JavaSscript, Mysql Database</p>
+      <p>
+        <b>About:</b> The main aim of this project was to develop an Ecommerece
+        website for stones which we normally use for designing of houses,
+        offices etc. This project was mainly designed with all the necessary
+        features that an Ecommerce site is needed starting from product
+        description, Selecting product, Logins for user and Admin and payment
+        Processing etc..
+      </p>
+      <p>
+        <i class="fas fa-hand-point-right"></i> Successfully developed user
+        friendly website with easy navigation for users throughout the website.
+      </p>
+      <p>
+        <i class="fas fa-hand-point-right"></i> Successfully designed checkout
+        page and payment processing for the selected products using paypal API.
+      </p>
+      <p>
+        <i class="fas fa-hand-point-right"></i> Created a review system for each
+        product to ensure that the particular product is best to purchase or
+        not.
+      </p>
+      <p>
+        <i class="fas fa-hand-point-right"></i> Developed a backend management
+        system that allows authorized person(admin) to make updates to the site
+        and manage user accounts, reviews, adding new products etc.
+      </p>
+
+      <h3>Pics Of the Project</h3>
+
+      <!------------Image Slider --------------->
+
+      <div class="slider">
+        <figure id="box">
+          <img src="project1/1.png" />
+        </figure>
+
+        <!-------Buttons for Slider----------->
+        <button class="prev" onclick="slide('prev')">
+          <i class="fas fa-chevron-circle-left"></i>
+        </button>
+        <button class="next" onclick="slide('next')">
+          <i class="fas fa-chevron-circle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!--------Javascript Script For Image Slider--------->
+    <script>
+      const slider_content = document.getElementById("box");
+
+      //This array contains Images in array form
+
+      const image = [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+      ];
+
+      let i = 0;
+
+      // Slider function
+      function slide(operation) {
+        if (operation === "next") {
+          i++;
+          if (i === image.length) i = image.length - 1; // Setting image to the last one
+        } else {
+          i--;
+          if (i < 0) i = 0; // Setting image to the first one
+        }
+        slider_content.innerHTML = "<img src=project1/" + image[i] + ".png>";
+      }
+    </script>
+  </body>
+</html>

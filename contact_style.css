@@ -1,0 +1,56 @@
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contact_info{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card{
+
+	margin: 30px;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.card-icon{
+
+	font-size: 20px;
+	background-color: #2F4F4F;
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.card p{
+
+	font-size: 20px;
+	padding: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+
+	.contact_info{
+		flex-direction: column;
+	}
+
+	.card{
+
+		width: 100%;
+		max-width: 250px;
+		margin: 10px 0px;
+	}
+}
