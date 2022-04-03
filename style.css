@@ -112,7 +112,7 @@ nav ul li a:hover {
   }
 }
 
-.image {
+.img {
   background-image: url("/2.jpg");
   height: auto;
   background-position: center;
@@ -146,6 +146,14 @@ nav ul li a:hover {
   text-align: center;
   text-transform: uppercase;
   padding: 70px;
+  text-shadow: 2px 2px 5px plum;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
   text-shadow: 2px 2px 5px plum;
 }
 
