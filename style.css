@@ -67,7 +67,7 @@ nav ul li a:hover {
 
 @media (max-width: 952px) {
   label.logo {
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 50px;
   }
 
@@ -276,6 +276,7 @@ h1 {
   font-weight: bold;
   font-family: "Mukta", sans-serif;
   font-size: 18px;
+  color: black;
 }
 
 .project_section {
@@ -295,7 +296,7 @@ h1 {
   box-sizing: border-box;
   overflow: hidden;
   text-align: center;
-  height: 380px;
+  height: 390px;
 }
 
 .project_section_body span {
