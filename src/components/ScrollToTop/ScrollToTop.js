@@ -14,7 +14,7 @@ const ScrollToTop = () => {
 
   return isVisible ? (
     <div className="scroll-top">
-      <a href="#top">
+      <a href="/">
         <i className="bi bi-arrow-up-circle"></i>
       </a>
     </div>
