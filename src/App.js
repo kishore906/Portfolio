@@ -34,7 +34,7 @@ const App = () => {
               </>
             }
           />
-          <Route path="/#/project/:id" element={<ProjectDescription />} />
+          <Route path="/project/:id" element={<ProjectDescription />} />
         </Routes>
       </HashRouter>
     </div>
