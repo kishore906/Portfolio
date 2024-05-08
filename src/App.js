@@ -7,7 +7,7 @@ import Skills from "./components/Skills/Skills";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Contact from "./components/Contact/Contact";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectDescription from "./components/ProjectsDescription/ProjectDescription";
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div id="top" className={`${themeName} app`}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             path="/"
@@ -36,7 +36,7 @@ const App = () => {
           />
           <Route path="project/:id" element={<ProjectDescription />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
