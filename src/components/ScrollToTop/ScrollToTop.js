@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ScrollToTop.css";
 
-const ScrollToTop = () => {
+const ScrollToTop = ({ click }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -14,9 +14,7 @@ const ScrollToTop = () => {
 
   return isVisible ? (
     <div className="scroll-top">
-      <a href="/">
-        <i className="bi bi-arrow-up-circle"></i>
-      </a>
+      <i className="bi bi-arrow-up-circle" onClick={click}></i>
     </div>
   ) : null;
 };

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useRef, useState } from "react";
 import { ThemeContext } from "./contexts/theme";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
@@ -12,6 +12,31 @@ import ProjectDescription from "./components/ProjectsDescription/ProjectDescript
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext);
+  const [showNavList, setShowNavList] = useState(false);
+  const projects = useRef(null);
+  const skills = useRef(null);
+  const contact = useRef(null);
+  const top = useRef(null);
+
+  const toggleNavList = (sectionId) => {
+    setShowNavList(!showNavList);
+
+    if (sectionId === "Projects") {
+      projects.current.scrollIntoView();
+    }
+
+    if (sectionId === "Skills") {
+      skills.current.scrollIntoView();
+    }
+
+    if (sectionId === "Contact") {
+      contact.current.scrollIntoView();
+    }
+  };
+
+  const scrollTop = () => {
+    top.current.scrollIntoView();
+  };
 
   return (
     <div id="top" className={`${themeName} app`}>
@@ -21,16 +46,20 @@ const App = () => {
             path="/"
             element={
               <>
-                <Header />
+                <Header
+                  click={toggleNavList}
+                  showNavList={showNavList}
+                  refProp={top}
+                />
 
                 <main>
                   <About />
-                  <Projects />
-                  <Skills />
-                  <Contact />
+                  <Projects refProp={projects} />
+                  <Skills refProp={skills} />
+                  <Contact refProp={contact} />
                 </main>
 
-                <ScrollToTop />
+                <ScrollToTop click={scrollTop} />
               </>
             }
           />

@@ -2,11 +2,11 @@ import { header } from "../../portfolio";
 import Navbar from "../Navbar/Navbar";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ click, showNavList, refProp }) => {
   const { homepage, title } = header;
 
   return (
-    <header className="header center">
+    <header className="header center" ref={refProp}>
       <h3>
         {homepage ? (
           <a href={homepage} className="link">
@@ -16,7 +16,7 @@ const Header = () => {
           title
         )}
       </h3>
-      <Navbar />
+      <Navbar click={click} showNavList={showNavList} />
     </header>
   );
 };

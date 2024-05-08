@@ -1,11 +1,11 @@
 import { contact } from "../../portfolio";
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({ refProp }) => {
   if (!contact.email || !contact.mobile || !contact.address) return null;
 
   return (
-    <section className="section contact center" id="contact">
+    <section className="section contact center" id="contact" ref={refProp}>
       <h2 className="section__title">Contact</h2>
       <div className="contact-info">
         <button type="button" className="btns btn--outline">
