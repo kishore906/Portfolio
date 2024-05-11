@@ -53,3 +53,9 @@
 .pointContainer p {
   margin-top: 0px;
 }
+
+@media screen and (max-width: 480px) {
+  .swiper {
+    height: 250px;
+  }
+}
