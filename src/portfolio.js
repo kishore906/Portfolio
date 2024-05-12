@@ -8,7 +8,7 @@ const about = {
   role: "Web Developer",
   description:
     "Junior Developer with an experience in developing full stack web applications using MERN stack and proficiency in front-end technologies including HTML5, CSS3, JavaScript and React JS. Possesses a strong understanding of Agile Scrum methodology and have experience in developing RESTful APIs. Passionate about contributing my technical skills and collaborating with a dynamic team to achieve organizational goals through meaningful contributions.",
-  resume: "/resume/Kishore_Koppula_Resume.pdf",
+  resume: "resume/Kishore_Koppula_Resume.pdf",
   social: {
     linkedin: "https://www.linkedin.com/in/kishorekoppula906",
     github: "https://github.com/kishore906",
