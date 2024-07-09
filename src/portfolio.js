@@ -17,6 +17,22 @@ const about = {
 
 const projects = [
   {
+    name: "Quiz Assessment Platform",
+    description:
+      "Developed a comprehensive Quiz Assessment Platform featuring user authentication, dynamic quizzes, detailed performance dashboards, and robust admin management capabilities.",
+    stack: ["HTML5", "CSS3", "React.js", "Node.js"],
+    sourceCode: "https://github.com/kishore906/quiz-MERN-App",
+    fullDescription: [
+      "Developed a comprehensive Quiz Assessment Platform using HTML5, CSS3, React.js, and Node.js, enabling users to create accounts, log in, and attempt quizzes on preferred topics.",
+      "Implemented state management and data fetching using Redux and RTK Query, ensuring efficient handling of user data and quiz information.",
+      "Integrated JWT-based authentication and authorization to secure user accounts, allowing users to edit profiles and access personalized dashboards with graphical performance metrics using Chart.js.",
+      "Built an admin section for quiz and user management, featuring functionalities to add, edit, and delete quiz questions and users, along with a dashboard to monitor monthly quiz activity across the platform.",
+    ],
+    img_folder: "quiz",
+    images_length: 21,
+    id: 1,
+  },
+  {
     name: "Ecommerce Project",
     description:
       "Developed an E-commerce platform tailored for showcasing and selling products with all kinds of functionalities like searching, filtering, adding to cart, delete cart item and secure payment.",
@@ -32,7 +48,7 @@ const projects = [
     ],
     img_folder: "ecommerce",
     images_length: 36,
-    id: 1,
+    id: 2,
   },
   {
     name: "Job Tracking Project",
@@ -49,7 +65,7 @@ const projects = [
     ],
     img_folder: "job_portal",
     images_length: 27,
-    id: 2,
+    id: 3,
   },
   {
     name: "Blog Project",
@@ -64,7 +80,7 @@ const projects = [
     ],
     img_folder: "blog_project",
     images_length: 10,
-    id: 3,
+    id: 4,
   },
 ];
 

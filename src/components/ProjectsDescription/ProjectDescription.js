@@ -41,7 +41,9 @@ function ProjectDescription() {
           {Array.apply(null, Array(project.images_length)).map((_, index) => (
             <SwiperSlide key={index}>
               <img
-                src={`${project.img_folder}/${index + 1}.jpg`}
+                src={`${project.img_folder}/${index + 1}.${
+                  project.img_folder === "quiz" ? "png" : "jpg"
+                }`}
                 alt="project_img"
               />
             </SwiperSlide>
