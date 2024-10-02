@@ -15,7 +15,7 @@ const ThemeProvider = ({ children }) => {
   }, []);
 
   const toggleTheme = () => {
-    const name = themeName === "dark" ? "light" : "dark";
+    const name = themeName === "light" ? "dark" : "light";
     localStorage.setItem("themeName", name);
     setThemeName(name);
   };
