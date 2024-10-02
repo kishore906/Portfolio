@@ -54,8 +54,8 @@ const App = () => {
 
                 <main>
                   <About />
-                  <Projects refProp={projects} />
                   <Skills refProp={skills} />
+                  <Projects refProp={projects} />
                   <Contact refProp={contact} />
                 </main>
 
