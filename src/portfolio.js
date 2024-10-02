@@ -5,7 +5,7 @@ const header = {
 
 const about = {
   name: "Kishore Koppula",
-  role: "Web Developer",
+  role: "Full Stack Developer",
   description:
     "Junior Developer with an experience in developing full stack web applications using MERN stack and proficiency in front-end technologies including HTML5, CSS3, JavaScript and React JS. Possesses a strong understanding of Agile Scrum methodology and have experience in developing RESTful APIs. Passionate about contributing my technical skills and collaborating with a dynamic team to achieve organizational goals through meaningful contributions.",
   resume: "resume/Kishore_Koppula_Resume.pdf",
@@ -85,17 +85,16 @@ const projects = [
 ];
 
 const skills = [
-  "HTML5",
-  "CSS3",
-  "Bootstrap",
-  "JavaScript",
-  "React.js",
-  "Redux",
-  "Node.js",
-  "Java",
-  "MYSQL",
-  "Git",
-  "Docker (Basics)",
+  { name: "HTML5", icon: "skills/html.png" },
+  { name: "CSS3", icon: "skills/css.png" },
+  { name: "Bootstrap", icon: "skills/bootstrap.png" },
+  { name: "Tailwind CSS", icon: "skills/tailwindcss.png" },
+  { name: "JavaScript", icon: "skills/javascript.png" },
+  { name: "React.js", icon: "skills/react.png" },
+  { name: "Node.js", icon: "skills/nodejs.png" },
+  { name: "Java (Spring Boot)", icon: "skills/spring-boot.png" },
+  { name: "MYSQL", icon: "skills/mysql.png" },
+  { name: "Git", icon: "skills/git.png" },
 ];
 
 const contact = {
